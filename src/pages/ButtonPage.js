@@ -3,7 +3,7 @@ import { GoBell } from "react-icons/go";
 import { FaGooglePay } from "react-icons/fa";
 function ButtonPage() {
   const handleMouseEnter = () => {
-    console.log("Mouse Enter");
+    // console.log("Mouse Enter");
   };
 
   return (

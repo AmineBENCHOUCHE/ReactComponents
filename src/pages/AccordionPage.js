@@ -20,7 +20,7 @@ function AccordionPage() {
     },
   ];
   return (
-    <div className="ml-10 mb-10">
+    <div className="">
       <Accordion items={items} />
     </div>
   );

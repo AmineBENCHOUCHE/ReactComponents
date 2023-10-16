@@ -25,7 +25,9 @@ const Accordion = ({ items }) => {
       </span>
     );
     return (
-      <div key={item.id}>
+      <div
+      className=""
+      key={item.id}>
         <div
           // on line event handler
           //onClick={() => setExpandedIndex(index)}
