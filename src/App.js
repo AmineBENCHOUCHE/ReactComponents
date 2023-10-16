@@ -1,36 +1,29 @@
-import Button from "./Button";
-import { GoBell } from "react-icons/go";
-import { FaGooglePay } from "react-icons/fa";
+import Accordion from "./components/Accordion";
+import ButtonPage from "./pages/ButtonPage";
 function App() {
-  const handleMouseEnter = () => {
-    console.log("Mouse Enter");
-  };
-
+  const items = [
+    {
+      id: "fgdfg",
+      label: "Can I use React on a project?",
+      content:
+        "You can use react on any project, You can use react on any projectYou can use react on any project",
+    },
+    {
+      id: "fgdfgdg",
+      label: "Can I use Javascript on a project?",
+      content:
+        "You can use react on any project, You can use react on any project",
+    },
+    {
+      id: "mapezn",
+      label: "Can I use CSS on a project?",
+      content: "You can use react on any project",
+    },
+  ];
   return (
-    <div className="m-10 flex gap-10">
-      <div className="">
-        <Button primary outlined rounded>
-          <GoBell />
-          Click me
-        </Button>
-      </div>
-      <div>
-        <Button danger outlined onClick={handleMouseEnter}>
-          <FaGooglePay />
-          Buy now
-        </Button>
-      </div>
-      <div>
-        <Button secondary>See details</Button>
-      </div>
-      <div>
-        <Button success outlined>
-          Hide ads
-        </Button>
-      </div>
-      <div>
-        <Button warning>Hide ads</Button>
-      </div>
+    <div>
+      <ButtonPage />
+      <Accordion items={items} />
     </div>
   );
 }
