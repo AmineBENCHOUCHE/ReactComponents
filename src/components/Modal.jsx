@@ -20,7 +20,7 @@ const Modal = ({onClose, actionBar, children }) => {
                 className="bg-gray-300/80 fixed inset-0 ">
             </div>
   
-            <div className=" fixed  border-2 p-10  shadow inset-40 bg-white">
+            <div className="fixed  border-2 p-10  shadow inset-40 bg-white">
                
                 <div className="flex flex-col justify-between  h-full rounded-lg">
                    {children}

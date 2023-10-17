@@ -29,7 +29,7 @@ const ModalPage = () => {
   );
 
   return (
-    <div className="relative">
+    <div className="relative ml-10">
       <Button primary onClick={handleClick}>
         Open Modal
       </Button>
