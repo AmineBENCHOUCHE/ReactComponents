@@ -5,6 +5,7 @@ const Sidebar = () => {
         {label:"Dropdown", path:"/"},
         {label:"Accordion", path:"/accordion"},
         {label:"Buttons", path:"/buttons"},
+        {label:"Modal", path:"/modal"},
     ]
 
     const renderedLiinks = links.map(link => (
@@ -15,7 +16,7 @@ const Sidebar = () => {
         </Link>
     ))
   return (
-    <div className="sticky top-0  flex flex-col items-start overflow-y-scroll">
+    <div className="sticky top-0  flex flex-col items-start ">
      {renderedLiinks}
 
     </div>
